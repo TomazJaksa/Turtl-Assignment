@@ -1,0 +1,14 @@
+<div *ngIf="post">
+
+    <div class="card">
+        <div class="card-header pt-4 pb-0 my-0">
+            <h2>Details for post with  Id {{ post.id}}</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{post.body}}</p>
+          <button (click)="goBack()" type="button" mdbBtn color="primary" mdbWavesEffect>Go back</button>
+        </div>
+    </div>
+  
+</div>
+

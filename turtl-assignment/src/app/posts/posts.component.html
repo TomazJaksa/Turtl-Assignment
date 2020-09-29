@@ -1,0 +1,15 @@
+<div class="row mb-5">
+    <div class="col-md-8 mx-auto">
+        <h2 class="text-center">POSTS</h2>
+
+        <ul class="list-group z-depth-5">
+            <li class="list-group-item pt-4 pb-3" *ngFor="let post of posts">
+                <a routerLink="/detail/{{post.id}}" >
+                    <div class="d-flex">
+                        <div class="pr-5 mr-5">{{post.id}}</div> <div>{{post.title}}</div>
+                    </div>  
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
